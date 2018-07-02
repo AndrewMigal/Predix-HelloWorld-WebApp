@@ -1,11 +1,30 @@
+
 <html>
-<head>
-<title>Hello World</title>
-</head>
-<body>
-Hello World
-<hr></hr>
-	<p>Now you are ready to visit <a target="_blank" href="https://www.predix.io/resources/tutorials/tutorial-details.html?tutorial_id=1569&tag=1719&journey=Hello%20World&resources=1475,1569,1523">Front End Hello World</a></p>
-	<p>Now you are ready to visit <a target="_blank" href="https://www.predix.io/resources/tutorials/tutorial-details.html?tutorial_id=1523&tag=1719&journey=Hello%20World&resources=1475,1569,1523">Back End Hello World</a></p>
-</body>
+  <head>
+    <title>Hello World</title>
+    <style>
+      body {background-image: url("predix-background.jpg"); margin: 0px;}
+      #time {font-size: 42px; font-family: "GE Inspira Sans", sans-serif;}
+      #time dl { padding: 10px 0; text-align: center; background-color: rgba(0,0,0,.5); position: absolute; bottom: 0; width: 100%; margin: 0;}
+      #time dt {font-weight: bold; color: rgb(235,239,242);}
+      #time dd {color: rgb(180,227,79); margin: 0px;}
+      img { margin: 0px auto; display: block; width: 50%; margin-top: 8%; border: 5px solid rgba(218,224,229); border-radius: 3px; }
+      @font-face {
+          font-family: "GE Inspira Sans";
+          font-weight: normal;
+          font-style: normal;
+          font-display:auto;src: url("https://cdn.predix-ui.com/px-cdn/type/2.0.0/GEInspiraSans.eot");
+          src: url("https://cdn.predix-ui.com/px-cdn/type/2.0.0/GEInspiraSans.eot?#iefix") format("embedded-opentype"),url("https://cdn.predix-ui.com/px-cdn/type/2.0.0/GEInspiraSans.woff2") format("woff2"),url("https://cdn.predix-ui.com/px-cdn/type/2.0.0/GEInspiraSans.woff") format("woff"),url("https://cdn.predix-ui.com/px-cdn/type/2.0.0/GEInspiraSans.ttf") format("truetype"),url("https://cdn.predix-ui.com/px-cdn/type/2.0.0/GEInspiraSans.svg#GE Inspira Sans") format("svg")
+      }
+    </style>
+  </head>
+  <body>
+    <img src='https://raw.githubusercontent.com/PredixCI/PredixCI-HelloWorld-Pipeline/master/predixci-logo.png'>
+    <div id='time'>
+      <dl>
+        <dt>Deploy Time:</dt><dd>TIME</dd>
+      </dl>
+    </div>
+
+  </body>
 </html>
