@@ -3,7 +3,7 @@
 export HOME=/root
 
 cd ~
-tar -xvf build_artifact.tar && rm build_artifact.tar
+tar -xvf scm_artifact.tar 
 
 echo "----"
 echo "Installing CF CLI"

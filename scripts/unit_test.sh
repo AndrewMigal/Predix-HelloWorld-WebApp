@@ -3,7 +3,6 @@
 export HOME=/root
 
 cd ~
-tar -xvf build_artifact.tar && rm build_artifact.tar
 
 echo "----"
 echo "Running Unit Tests"
@@ -15,4 +14,4 @@ echo "----"
 echo "Unit Tests Passed"
 echo "----"
 
-tar -cvf scm_artifact.tar 
+tar -cvf scm_artifact.tar /usr/local/repos

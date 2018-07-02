@@ -1,0 +1,15 @@
+---
+pipeline:
+  unit_test:
+    deploy
+profiles:
+  unit_test:
+    script: scripts/unit_test.sh 
+    output_artifacts:
+      - scm_artifact.tar
+  deploy:
+    input_artifacts:
+      - scm_artifact.tar
+    script: scripts/deploy_application.sh
+  default:
+    script: "/dev/null"
