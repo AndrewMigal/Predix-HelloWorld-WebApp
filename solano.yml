@@ -12,4 +12,4 @@ profiles:
       - scm_artifact.tar
     script: scripts/deploy_application.sh
   default:
-    script: "/dev/null"
+    script: "/dev/nill"
