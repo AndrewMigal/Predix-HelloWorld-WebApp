@@ -24,5 +24,4 @@ profiles:
     input:
       - build_artifact.tar
     script: scripts/deploy_application.sh
-  default:
-    script: "/dev/null"
+  
