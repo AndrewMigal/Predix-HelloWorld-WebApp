@@ -7,21 +7,11 @@ edges:
   - build: deploy
 profiles:
   fetch:
-    script: scripts/tar_application.sh
-    output:
-      - scm_artifact.tar
+    script: "/usr/local/repos/sucess_test"
   unit_test:
-    input:
-      - scm_artifact.tar
-    script: scripts/unit_test.sh
+    script: "/usr/local/repos/sucess_test"
   build:
-    input:
-      - scm_artifact.tar
-    script: scripts/build.sh
-    output:
-      - build_artifact.tar
+    script: "/usr/local/repos/sucess_test"
   deploy:
-    input:
-      - build_artifact.tar
-    script: scripts/deploy_application.sh
+    script: "/usr/local/repos/sucess_test"
   
