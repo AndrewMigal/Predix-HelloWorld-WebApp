@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Test output, created by me"
+exit 0
