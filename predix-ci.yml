@@ -1,2 +1,16 @@
 ---
-script: "/usr/local/repos/sucess_test"
+plan:
+  - fetch
+  - unit_test
+  - build
+  - deploy
+profiles:
+  fetch:
+    script: "/usr/local/repos/sucess_test"
+  unit_test:
+    script: "/usr/local/repos/sucess_test"
+  build:
+    script: "/usr/local/repos/sucess_test"
+  deploy:
+    script: "/usr/local/repos/sucess_test"
+  
