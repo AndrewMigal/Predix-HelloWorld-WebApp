@@ -1,17 +1,1 @@
----
-pipeline:
-  fetch:
-    - unit_test: deploy
-    - build
-edges:
-  - build: deploy
-profiles:
-  fetch:
-    script: "/usr/local/repos/sucess_test"
-  unit_test:
-    script: "/usr/local/repos/sucess_test"
-  build:
-    script: "/usr/local/repos/sucess_test"
-  deploy:
-    script: "/usr/local/repos/sucess_test"
-  
+script: "/usr/local/repos/sucess_test"
