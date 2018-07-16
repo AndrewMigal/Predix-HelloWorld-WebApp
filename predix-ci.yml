@@ -14,4 +14,5 @@ profiles:
     script: "/usr/local/repos/sucess_test"
   deploy:
     script: "/usr/local/repos/sucess_test"
-    
+  default:
+    script: "/usr/local/repos/sucess_test"
