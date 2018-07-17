@@ -1,12 +1,26 @@
-plan:
-- fetch
-- first
-- second
-
+---
+pipeline:
+  fetch:
+    - unit_test: deploy
+    - build
+edges:
+  - build: deploy
 profiles:
   fetch:
-    script: "exit 0"
-  first:
-    script: "exit 0"
-  second:
-    script: "exit 0"
+    script: scripts/tar_application.sh
+    output:
+      - scm_artifact.tar
+  unit_test:
+    input:
+      - scm_artifact.tar
+    script: scripts/unit_test.sh
+  build:
+    input:
+      - scm_artifact.tar
+    script: scripts/build.sh
+    output:
+      - build_artifact.tar
+  deploy:
+    input:
+      - build_artifact.tar
+    script: scripts/deploy_application.sh
