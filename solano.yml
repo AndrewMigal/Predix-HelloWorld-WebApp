@@ -1,0 +1,12 @@
+plan:
+- fetch
+- first
+- second
+
+profiles:
+  fetch:
+    script: "exit 0"
+  first:
+    script: "exit 0"
+  second:
+    script: "exit 0"
